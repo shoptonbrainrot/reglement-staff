@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Règlement Staff • Westlife</title>
+
+<style>
+:root{
+  --bg:#0b0b0b;
+  --bg2:#111;
+  --gold:#d2a679;
+  --gold2:#e6c18a;
+  --text:#f4f4f4;
+  --muted:rgba(255,255,255,.72);
+  --line:rgba(210,166,121,.25);
+  --shadow:0 20px 60px rgba(0,0,0,.75);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:system-ui,Segoe UI,Arial;
+  color:var(--text);
+  background:
+    radial-gradient(1200px 600px at 15% 10%, rgba(210,166,121,.12), transparent 60%),
+    radial-gradient(900px 500px at 85% 15%, rgba(230,193,138,.08), transparent 60%),
+    linear-gradient(180deg,var(--bg),var(--bg2));
+}
+
+/* Header / banner */
+.header{
+  text-align:center;
+  padding:38px 20px 18px;
+}
+.header img{
+  max-width:520px;
+  width:92%;
+  height:auto;
+}
+.divider{
+  height:3px;
+  width:260px;
+  margin:18px auto 0;
+  background:linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+/* Card */
+.card{
+  max-width:1100px;
+  margin:46px auto 90px;
+  background:rgba(15,15,15,.95);
+  padding:38px;
+  border-radius:22px;
+  border:1px solid var(--line);
+  box-shadow:var(--shadow);
+}
+
+h1{
+  text-align:center;
+  font-size:44px;
+  margin:6px 0 6px;
+  color:var(--gold2);
+  letter-spacing:.5px;
+}
+.subtitle{
+  text-align:center;
+  color:var(--muted);
+  font-weight:750;
+  margin:0 0 14px;
+}
+.meta{
+  text-align:center;
+  margin:10px 0 0;
+  font-weight:900;
+  color:var(--gold);
+}
+
+/* Info bar */
+.alert{
+  margin:22px auto 26px;
+  max-width:900px;
+  padding:16px;
+  background:rgba(210,166,121,.16);
+  border:1px solid var(--line);
+  border-radius:14px;
+  text-align:center;
+  font-weight:950;
+}
+
+/* Sections */
+.section{
+  margin-top:30px;
+}
+.sectionTitle{
+  margin:0 0 10px;
+  color:var(--gold2);
+  font-size:18px;
+  letter-spacing:.2px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.sectionTitle::before{
+  content:"";
+  width:22px;
+  height:3px;
+  border-radius:999px;
+  background:linear-gradient(90deg, var(--gold), transparent);
+  opacity:.9;
+}
+
+/* Rules grid */
+.rules{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px 22px;
+}
+.rule{
+  background:rgba(255,255,255,.03);
+  padding:15px 16px;
+  border-radius:16px;
+  border:1px solid rgba(210,166,121,.22);
+}
+.rule:hover{
+  border-color: rgba(210,166,121,.35);
+  background: rgba(255,255,255,.035);
+}
+.ruleCode{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:1000;
+  letter-spacing:.25px;
+  color:var(--gold);
+  margin-bottom:8px;
+}
+.ruleCode::before{
+  content:"";
+  width:18px;
+  height:2px;
+  border-radius:999px;
+  background:rgba(255,255,255,.55);
+}
+.ruleText{
+  color:rgba(255,255,255,.82);
+  font-weight:800;
+  line-height:1.65;
+}
+
+/* Credits */
+.credits{
+  position:fixed;
+  right:16px;
+  bottom:14px;
+  background:rgba(0,0,0,.6);
+  border:1px solid var(--line);
+  padding:10px 14px;
+  border-radius:14px;
+  font-weight:950;
+  color:var(--gold2);
+}
+.credits span{color:var(--muted)}
+
+@media(max-width:900px){
+  .rules{grid-template-columns:1fr}
+  h1{font-size:32px}
+  .card{padding:22px}
+  .credits{right:10px;bottom:10px;font-size:12px}
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+  <img src="banner.png" alt="Westlife">
+  <div class="divider"></div>
+</div>
+
+<section class="card">
+
+<h1>Règlement Staff</h1>
+<p class="subtitle">Tout membre du staff doit connaître et respecter ce règlement.</p>
+<div class="meta">Dernière mise à jour : 07/05/2025</div>
+
+<div class="alert">
+Le non-respect de ce règlement entraînera des sanctions adaptées à la gravité des faits.
+</div>
+
+<div class="section">
+  <div class="sectionTitle">1. Comportement général</div>
+  <div class="rules">
+    <div class="rule"><div class="ruleCode">1.01</div><div class="ruleText">Reste quelques secondes sur le joueur avant de traiter un report.</div></div>
+    <div class="rule"><div class="ruleCode">1.02</div><div class="ruleText">Ne réanime jamais sans observer la scène.</div></div>
+    <div class="rule"><div class="ruleCode">1.03</div><div class="ruleText">Copier-coller des messages dans les tickets Discord est interdit.</div></div>
+    <div class="rule"><div class="ruleCode">1.04</div><div class="ruleText">Les "fast reports" ou reports à distance sont interdits.</div></div>
+    <div class="rule"><div class="ruleCode">1.05</div><div class="ruleText">Tu ne dois pas gérer plusieurs tickets Discord à la fois.</div></div>
+    <div class="rule"><div class="ruleCode">1.06</div><div class="ruleText">Reste en noclip sauf pour parler à un joueur ou réparer un véhicule.</div></div>
+    <div class="rule"><div class="ruleCode">1.07</div><div class="ruleText">Tu ne dois pas te téléporter à un staff sans le surveiller.</div></div>
+    <div class="rule"><div class="ruleCode">1.08</div><div class="ruleText">Interdit de faire du RP sans demande officielle.</div></div>
+    <div class="rule"><div class="ruleCode">1.09</div><div class="ruleText">Interdit d’utiliser tes permissions en scène RP.</div></div>
+    <div class="rule"><div class="ruleCode">1.10</div><div class="ruleText">Ta tenue Staff est obligatoire pendant ton service.</div></div>
+    <div class="rule"><div class="ruleCode">1.11</div><div class="ruleText">Tu dois être en vocal Staff IG ou BDA en service.</div></div>
+    <div class="rule"><div class="ruleCode">1.12</div><div class="ruleText">Ton activité de jeu doit être activée sur Dynasty.</div></div>
+    <div class="rule"><div class="ruleCode">1.13</div><div class="ruleText">Tu ne peux pas jouer sur un autre serveur RP.</div></div>
+    <div class="rule"><div class="ruleCode">1.14</div><div class="ruleText">Tu ne dois pas dépasser la limite de membres dans une BDA.</div></div>
+    <div class="rule"><div class="ruleCode">1.15</div><div class="ruleText">Interdiction de chill en vocal Staff ou Support.</div></div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="sectionTitle">2. Utilisation des permissions</div>
+  <div class="rules">
+    <div class="rule"><div class="ruleCode">2.01</div><div class="ruleText">Interdiction d’utiliser les permissions en scène RP (revive, give, ID, etc.).</div></div>
+    <div class="rule"><div class="ruleCode">2.02</div><div class="ruleText">Interdiction de faire des vérifications cheat sans le rôle autorisé.</div></div>
+    <div class="rule"><div class="ruleCode">2.03</div><div class="ruleText">Interdiction de ban sans preuve de cheat.</div></div>
+    <div class="rule"><div class="ruleCode">2.04</div><div class="ruleText">Interdiction de faire spawn des véhicules troll (perms orange requises).</div></div>
+    <div class="rule"><div class="ruleCode">2.05</div><div class="ruleText">Interdiction de jail entre staffs sauf RP.</div></div>
+    <div class="rule"><div class="ruleCode">2.06</div><div class="ruleText">Interdiction d’abuser des permissions Discord.</div></div>
+    <div class="rule"><div class="ruleCode">2.07</div><div class="ruleText">Interdiction d’utiliser le noclip avec véhicule en scène RP.</div></div>
+    <div class="rule"><div class="ruleCode">2.08</div><div class="ruleText">Interdiction d'utiliser les permissions sans autorisation (armes, items, etc.).</div></div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="sectionTitle">3. Gestion des sanctions</div>
+  <div class="rules">
+    <div class="rule"><div class="ruleCode">3.01</div><div class="ruleText">Respecte les règles de sanction définies dans 📌・règlement-staff.</div></div>
+    <div class="rule"><div class="ruleCode">3.02</div><div class="ruleText">Tu ne dois jamais régler ta propre scène RP.</div></div>
+    <div class="rule"><div class="ruleCode">3.03</div><div class="ruleText">Tu ne dois pas modifier une sanction appliquée par un autre staff.</div></div>
+    <div class="rule"><div class="ruleCode">3.04</div><div class="ruleText">Tu ne peux pas fermer un ticket dont tu n’es pas responsable.</div></div>
+    <div class="rule"><div class="ruleCode">3.05</div><div class="ruleText">Tu ne peux pas demander de rankup.</div></div>
+    <div class="rule"><div class="ruleCode">3.06</div><div class="ruleText">Interdiction de faire des sous-entendus pour des ranks ou avertissements.</div></div>
+    <div class="rule"><div class="ruleCode">3.07</div><div class="ruleText">Se plaindre d’un avertissement = sanction.</div></div>
+    <div class="rule"><div class="ruleCode">3.08</div><div class="ruleText">Le non-respect de la hiérarchie sera sanctionné.</div></div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="sectionTitle">4. Infractions graves</div>
+  <div class="rules">
+    <div class="rule"><div class="ruleCode">4.01</div><div class="ruleText">Embrouille entre staffs = Demote.</div></div>
+    <div class="rule"><div class="ruleCode">4.02</div><div class="ruleText">Racisme, sexisme ou blasphème = Demote.</div></div>
+    <div class="rule"><div class="ruleCode">4.03</div><div class="ruleText">Scam de joueur = Demote + ban permanent.</div></div>
+    <div class="rule"><div class="ruleCode">4.04</div><div class="ruleText">Inactivité prolongée sans justification = Demote.</div></div>
+    <div class="rule"><div class="ruleCode">4.05</div><div class="ruleText">Se croire au-dessus des règles parce que gradé = Derank.</div></div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="sectionTitle">5. Tableau des sanctions</div>
+  <div class="rules">
+    <div class="rule"><div class="ruleCode">5.01</div><div class="ruleText">RP sans demande → 1 avertissement</div></div>
+    <div class="rule"><div class="ruleCode">5.02</div><div class="ruleText">Perms utilisées en RP → 2 avertissements</div></div>
+    <div class="rule"><div class="ruleCode">5.03</div><div class="ruleText">Abus de permissions → 1 avertissement</div></div>
+    <div class="rule"><div class="ruleCode">5.04</div><div class="ruleText">Fast report → 1 avertissement</div></div>
+    <div class="rule"><div class="ruleCode">5.05</div><div class="ruleText">Réglage de sa propre scène → 1 avertissement</div></div>
+    <div class="rule"><div class="ruleCode">5.06</div><div class="ruleText">Chill en vocal Staff IG/Support → 1 avertissement</div></div>
+    <div class="rule"><div class="ruleCode">5.07</div><div class="ruleText">Non-respect de la hiérarchie → 1 ou 2 avertissements</div></div>
+    <div class="rule"><div class="ruleCode">5.08</div><div class="ruleText">Insultes → 1 ou 2 avertissements</div></div>
+    <div class="rule"><div class="ruleCode">5.09</div><div class="ruleText">Dénoclip en scène → 2 avertissements</div></div>
+    <div class="rule"><div class="ruleCode">5.10</div><div class="ruleText">Dénoclip en zone MassRP → 2 avertissements</div></div>
+    <div class="rule"><div class="ruleCode">5.11</div><div class="ruleText">Modifier une sanction existante → 2 avertissements</div></div>
+    <div class="rule"><div class="ruleCode">5.12</div><div class="ruleText">Absence de tenue Staff → 1 avertissement</div></div>
+    <div class="rule"><div class="ruleCode">5.13</div><div class="ruleText">Non-présence en Staff IG/BDA → 1 avertissement</div></div>
+    <div class="rule"><div class="ruleCode">5.14</div><div class="ruleText">Fermer un ticket d’un autre staff → 2 avertissements</div></div>
+    <div class="rule"><div class="ruleCode">5.15</div><div class="ruleText">Abus permissions Discord → 1 avertissement</div></div>
+    <div class="rule"><div class="ruleCode">5.16</div><div class="ruleText">Noclip véhicule en RP → 2 avertissements</div></div>
+    <div class="rule"><div class="ruleCode">5.17</div><div class="ruleText">Ban sans preuve → 1 avertissement</div></div>
+    <div class="rule"><div class="ruleCode">5.18</div><div class="ruleText">Dépasser la limite en BDA → Sanction collective</div></div>
+    <div class="rule"><div class="ruleCode">5.19</div><div class="ruleText">Ce give arme interdite → Retrait + 1 avertissement</div></div>
+    <div class="rule"><div class="ruleCode">5.20</div><div class="ruleText">Give d’arme sans autorisation → Retrait + 1 avertissement</div></div>
+  </div>
+</div>
+
+</section>
+
+<div class="credits">
+Crédits : <b>Luco</b> — <span>@lucoontop</span>
+</div>
+
+</body>
+</html>
